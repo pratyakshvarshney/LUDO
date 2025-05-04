@@ -1,0 +1,251 @@
+* {
+    margin: none;
+    padding: none;
+}
+
+body {
+    background-color: rgb(239, 186, 153);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin-top: 0px;
+    font-size: 2.5rem;
+}
+
+.ludo {
+    background-color: white;
+}
+
+.red-home {
+    background-color: rgb(218, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red-home-box, .green-home-box, .blue-home-box, .yellow-home-box {
+    background-color: white;
+    height: 170px;
+    width: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid black;
+}
+
+.red-home-spot1, .red-home-spot2, .red-home-spot3, .red-home-spot4 {
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: rgb(218, 0, 0);
+    height: 40%;
+    width: 40%;
+}
+
+.red-home-spot1, .red-home-spot2, .red-home-spot3, .red-home-spot4 {
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: rgb(218, 0, 0);
+    height: 40%;
+    width: 40%;
+}
+
+.blue-home-spot1, .blue-home-spot2, .blue-home-spot3, .blue-home-spot4 {
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: rgb(2, 2, 134);
+    height: 40%;
+    width: 40%;
+}
+
+.green-home-spot1, .green-home-spot2, .green-home-spot3, .green-home-spot4 {
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: green;
+    height: 40%;
+    width: 40%;
+}
+
+.yellow-home-spot1, .yellow-home-spot2, .yellow-home-spot3, .yellow-home-spot4 {
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: rgb(238, 238, 14);
+    height: 40%;
+    width: 40%;
+}
+
+.green-home {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue-home {
+    background-color: rgb(2, 2, 134);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yellow-home {
+    background-color: rgb(238, 238, 14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upper-part, .lower-part, .middle-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.red-home, .yellow-home, .green-home, .blue-home {
+    height: 240px;
+    width: 240px;
+    border: 1px solid black;
+}
+
+.path-red-blue, .path-green-yellow {
+    height: 120px;
+    width: 240px;
+    border: 1px solid black;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+.path-green-yellow {
+    margin-top: 0.5px;
+}
+
+.win-spot {
+    height: 120px;
+    width: 120px;    
+}
+
+.path-red-green, .path-blue-yellow {
+    border: 1px solid black;
+    height: 240px;
+    width: 120px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.r1, .r2, .r3, .r4, .r5, .r6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5px;
+}
+
+.r13, .r14, .r15, .r10, .r11, .r12 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5px;
+}
+
+.r7, .r8, .r9 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#col1, #col2, #col3, #col4, #col5, #col6 {
+    height: 39.3px;
+    width: 40px;
+    border: 0.5px solid black;
+    border-left: 0px;
+    border-top: 0px;
+}
+
+#col10, #col11, #col12, #col13, #col14, #col15 {
+    height: 39.3px;
+    width: 40px;
+    border: 0.5px solid black;
+    border-left: 0px;
+    border-top: 0px;
+}
+
+.row9#col10, .row9#col11, .row9#col12, .row9#col13, .row9#col14, .row9#col15 {
+    border-bottom: none;
+}
+
+#col15 {
+    border-right: none;
+}
+
+#col10 {
+    border-left: 0.5px solid black;
+}
+
+#col7, #col8, #col9 {
+    height: 39.3px;
+    width: 40px;
+    border: 0.5px solid black;
+    border-left: 0px;
+    border-top: 0px;
+}
+
+#col9{
+    border-right: 0px;
+}
+
+.row2#col8, .row3#col8, .row4#col8, .row5#col8, .row6#col8, .row2#col9  {
+    background-color: green;
+}
+
+.row10#col8, .row11#col8, .row12#col8, .row13#col8, .row14#col8, .row14#col7  {
+    background-color: rgb(2, 2, 134);
+}
+
+.row10#col7, .row10#col8, .row10#col9 {
+    border-top: 0.5px solid black
+}
+
+.row7#col2, .row8#col2, .row8#col3, .row8#col4, .row8#col5, .row8#col6 {
+    background-color: rgb(218, 0, 0);
+}
+
+.row9#col14, .row8#col10, .row8#col11, .row8#col12, .row8#col13, .row8#col14 {
+    background-color: rgb(238, 238, 14);
+}
+
+.win-spot {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: none;
+}
+  
+.triangle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.top {
+    clip-path: polygon(100% 0, 50% 50%, 0 0);
+    background-color: green;
+}
+
+.left {
+    clip-path: polygon(0 0, 50% 50%, 0 100%);
+    background-color: rgb(218, 0, 0);
+}
+
+.right {
+    clip-path: polygon(100% 100%, 50% 50%, 100% 0);
+    background-color: rgb(238, 238, 14);
+}
+
+.bottom {
+    clip-path: polygon(0 100%, 50% 50%, 100% 100%);
+    background-color: rgb(2, 2, 134);
+}
